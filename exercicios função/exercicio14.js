@@ -11,25 +11,25 @@ function frutas(fruta){
     }else if(fruta=='melancia'){
         cond = 3;
     }else{
-        console.log("ERRO");
+        return 'ERRO';
     }
 
     switch(cond){
         case 1:
-           console.log('Não vendemos essa fruta aqui')
-            break
+           return 'Não vendemos essa fruta aqui';
+            break;
         case 2: 
-            console.log('Estamos com escassez de kiwis')
-            break
+            return 'Estamos com escassez de kiwis';
+            break;
         case 3: 
-            console.log('Aqui está, são 3 reais o quilo')
-            break
+            return 'Aqui está, são 3 reais o quilo';
+            break;
     }
 
 }
 
-frutas('maçã')
-frutas('kiwi')
-frutas('melancia')
-frutas('josé')
-frutas(85)
+console.log(frutas('maçã'))
+console.log(frutas('kiwi'))
+console.log(frutas('melancia'))
+console.log(frutas('josé'))
+console.log(frutas(85))
