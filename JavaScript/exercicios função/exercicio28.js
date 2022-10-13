@@ -1,4 +1,4 @@
-//le um array de inteiros e diz se são pares ou impares
+//le um array de inteiros e diz quantos são pares e impares
 
 function parOuImpar(array){
     
@@ -16,6 +16,6 @@ function parOuImpar(array){
     console.log(`ímpares: ${impares} Pares: ${pares}`);
 }
 
-num = [0, 1, 2, 3, 4,, 5, 6 ,7, 8, 9];
+num = [0, 1, 2, 3, 4, 5, 6 ,7, 8, 9];
 
 parOuImpar(num);

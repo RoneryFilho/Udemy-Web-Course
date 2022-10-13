@@ -2,9 +2,6 @@
 
 function alturas(alt1, taxa1, alt2, taxa2){
 
-    let altF1 = 0;
-    let altF2 = 0;
-
     if(alt1==alt2){
         if(taxa1==taxa2){
             return 'Ambas tem a mesma altura'
