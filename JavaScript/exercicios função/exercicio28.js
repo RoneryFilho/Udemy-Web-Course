@@ -1,4 +1,4 @@
-//le um array de inteiros e diz se são pares ou impares
+//le um array de inteiros e diz quantos são pares e impares
 
 function parOuImpar(array){
     
