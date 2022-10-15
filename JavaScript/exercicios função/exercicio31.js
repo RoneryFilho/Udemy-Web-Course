@@ -8,7 +8,7 @@ function negativos(array){
             neg ++;
         }
     }
-    return neg;
+    return `Array contém ${neg} numeros negativos`;
 }
 
 let teste1 = [-1, 4, 6, -3, -4, -4, 9];
