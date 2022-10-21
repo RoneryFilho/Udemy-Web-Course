@@ -1,6 +1,6 @@
-function calculadora(n1, oper, n2){
+function calculadora(n1, oper, n2) {
 
-    switch(oper){
+    switch (oper) {
         case '+':
             return n1 + n2;
         case '-':
@@ -9,7 +9,7 @@ function calculadora(n1, oper, n2){
             return n1 * n2;
         case '/':
             return n1 / n2;
-        default: 
+        default:
             return 'OPERAÇÃO INVÁLIDA';
     }
 

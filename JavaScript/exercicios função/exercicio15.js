@@ -1,18 +1,18 @@
 //switch carros
 
-function carro(modelo){
+function carro(modelo) {
 
 
-    switch(modelo){
+    switch (modelo) {
         case 'hatch':
-           return 'Compra efetuada com sucesso';
+            return 'Compra efetuada com sucesso';
             break;
         case 'sedan':
         case 'motocicleta':
-        case 'caminhonete': 
+        case 'caminhonete':
             return 'Tem certeza que não prefere esse modelo?';
             break;
-        default: 
+        default:
             return 'Não trabalhamos com esse tipo de automóvel aqui';
             break;
     }
