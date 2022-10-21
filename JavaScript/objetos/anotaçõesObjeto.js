@@ -9,32 +9,32 @@ const obj2 = new Object;//podem ser definidos os parametros com {} normalmente, 
 console.log(obj2);
 
 //Usando funções construtoras (basicamente são objetos)
-function Produto(nome, preco, desc){
+function Produto(nome, preco, desc) {
     this.nome = nome; //.this torna o parametro nome publico, podendo ser acessado fora do escopo da função/objeto
 
-    this.getProdutoComDesconto = () =>{ //o mesmo acontece ao usar .this aqui, tornando a função arrow um parametro publico
-        return preco * (1-desc); //os parametros preco e desc ainda são privados, pois não foi utilizado o .this para tornalos publicos
-        }
+    this.getProdutoComDesconto = () => { //o mesmo acontece ao usar .this aqui, tornando a função arrow um parametro publico
+        return preco * (1 - desc); //os parametros preco e desc ainda são privados, pois não foi utilizado o .this para tornalos publicos
     }
-    //criando novos objetos a partir do obj Produto:
+}
+//criando novos objetos a partir do obj Produto:
 const p1 = new Produto('Notebook', 3600, 0.20);
 const p2 = new Produto('Celular', 2500, 0.15);
 console.log(p1, p2);
 console.log(p1.getProdutoComDesconto(), p2.getProdutoComDesconto());
 
 //Usando Função Factory
-function ciarFuncionario(nome, salario, faltas){
+function ciarFuncionario(nome, salario, faltas) {
     return {
         nome,
         salario,
         faltas,
-        getSalario(){
-            return salario - ((salario/30) * faltas)
+        getSalario() {
+            return salario - ((salario / 30) * faltas)
         }
     }
 }
 
-const f1 = ciarFuncionario('Joao',7980,4);
+const f1 = ciarFuncionario('Joao', 7980, 4);
 const f2 = ciarFuncionario('Maria', 11400, 1);
 console.log(f1.getSalario(), f2.getSalario())
 
