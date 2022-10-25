@@ -107,3 +107,7 @@ delete carro.velocMax;
 carro.cor = "Prata";
 console.log(carro);
 
+const teste = new Produto("Carro", 8900, 0.20);
+console.log(Object.keys(teste))//Object.keys(objeto) transforma o objeto em um array com seus atributos(sem seus valores) como elementos
+console.log(Object.values(teste))//Object.values(objeto) transforma o objeto em array, usando ovalor de seus atributos como elementos
+console.log(Object.entries(teste))//Object.entries(objeto) transforma o objeto em matriz, usando tanto os atributos como seus valores, como elementos da matriz
