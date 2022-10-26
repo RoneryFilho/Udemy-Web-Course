@@ -24,4 +24,3 @@ let estudantes = {
 }
 
 console.log(notasFinais(estudantes));
-
