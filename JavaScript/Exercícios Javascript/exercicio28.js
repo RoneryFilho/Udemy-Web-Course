@@ -1,5 +1,6 @@
 //pega um objeto com nomes e um array de notas, e retorna o que teve a melhor nota
 
+//criando metodos que podem ser acessados dentro da função
 const soma = array => array.reduce((acumulador, atual) => acumulador + atual,0); //soma todos os valores do array
 const media = array => soma(array)/ array.length; //divide a soma pela quantidade de notas(elementos do array)
 
